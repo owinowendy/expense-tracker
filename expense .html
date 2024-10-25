@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        <div class="container">
+            <!-- Left Section: Expense Breakdown -->
+            <div class="left-section">
+              <h2>Hello, Syed</h2>
+              <div class="total-display">
+                <p>Total: </p>
+                <span>₹ 492.00</span>
+              </div>
+              <div class="expense-list">
+                <ul>
+                  <li>
+                    <span>Cafe</span> <span>₹ 240.00</span>
+                    <span>🗑️</span>
+                  </li>
+                  <li>
+                    <span>Dinner</span> <span>₹ 12.00</span>
+                    <span>🗑️</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <!-- Right Section: User Info and Add Expense -->
+            <div class="right-section">
+              <div class="user-info">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                <p>Syed Muzzammil Hassan Abedi</p>
+                <button class="signout-btn">Sign Out</button>
+              </div>
+          
+              <div class="expense-input">
+                <label for="amount">Amount: </label>
+                <input type="number" id="amount" placeholder="Enter amount">
+          
+                <label for="description">Description: </label>
+                <input type="text" id="description" placeholder="Description">
+          
+                <label for="category">Category: </label>
+                <select id="category">
+                  <option value="Food/Beverage">Food/Beverage</option>
+                  <option value="Travel/Commute">Travel/Commute</option>
+                  <option value="Shopping">Shopping</option>
+                </select>
+          
+                <button id="add-expense-btn">Add to Expense</button>
+              </div>
+            </div>
+          </div>
+          
+</body>
+
+</html>
