@@ -43,6 +43,15 @@
   </div>
 
   <script>
+     const signupForm = document.getElementById('signupForm');
+    signupForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      // Perform any validation or signup logic here
+      
+      // Redirect to main.html
+      window.location.href = 'expense.html';
+    });
     function showLogin() {
       document.getElementById('signupForm').classList.add('hidden');
       document.getElementById('loginForm').classList.remove('hidden');
